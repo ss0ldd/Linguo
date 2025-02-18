@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar ul li {
+    margin-right: 20px;
+}
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+.nav-bar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.messages .message {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.error .error {
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.profile-container h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+.user-info-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.user-info-container p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.user-info-container strong {
+    color: #555;
+}
+
+.update-profile-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.update-profile-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.update-profile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.update-profile-container label {
+    font-weight: bold;
+    color: #555;
+}
+.update-profile-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.update-profile-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.update-profile-container button:hover {
+    background-color: #0056b3;
+}
+
+.user-not-found {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.user-not-found h1 {
+    color: #333;
+}
+.user-not-found p {
+    font-size: 16px;
+    color: #555;
+}
+.user-not-found a {
+    color: #007bff;
+    text-decoration: none;
+}
+.user-not-found a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
